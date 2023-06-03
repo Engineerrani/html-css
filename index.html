@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    body {
+        font-family: 'Heebo', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        background: url('img/bg.jpg');
+    }
+    .left {
+          position: absolute;
+        left: 60px;
+        top: 20px;
+        display: inline-block;
+    /* border: 2px solid red; */
+    }
+    .mid {
+        display: block;
+        width: 48%;
+        margin:18px auto;
+       /* border: 2px solid green; */
+    }
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar {
+        display: inline-block;
+    }
+    .navbar li {
+        display: inline-block;
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 15px;
+        font-size: 21px;
+     
+    }
+     .navbar li a:hover, .navbar li a.active {
+        color: rgb(211, 201, 201);
+        text-decoration: underline;
+   
+    }
+    .left img {
+        width: 100px;
+        filter:invert(100%); /* change the color of img from black to white and white o blck */
+    }
+    .left div {
+        text-align: center;
+        line-height: 10px;
+        font-size: 24px;
+
+    }
+    .btn {
+        font-family: 'Heebo', sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn {
+background-color: rgb(31, 30, 30);
+    }
+    .container {
+  border: 2px solid white;
+    margin: 154px 106px;
+    padding: 40px 79px;
+    width: 36%;
+    border-radius: 10px;
+}
+    .form-group input {
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    display: block;
+    width: 462px;
+    border-radius: 8px;
+    font-size: 25px;
+    margin: 11px auto;
+    padding: 3px;
+    border: 2px solid black;
+}
+.container h1 {
+  text-align: center;
+}
+.container button{
+    display: block;
+    width: 96%;
+    margin:15px auto;
+}
+div img {
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    display: inline-block;
+}
+
+</style>
+<body>
+<header class="header">
+    <div class="left">
+<img src="img/gym.jpg" alt="" srcset="">
+<div>Active Fitness</div>
+    </div>
+    <div class="mid">
+<ul class="navbar">
+    <li> <a href="#" class="active">Home</a></li>
+    <li> <a href="#">About Us</a></li>
+    <li> <a href="#">Fitness Calculator</a></li>
+    <li> <a href="#">Contact Us</a></li>
+</ul>
+    </div>
+    <div class="right">
+<button class="btn">Call Us Now</button>
+<button class="btn">Email Us</button>
+    </div>
+</header>
+<div class="container">
+    <h1>Join the best gym of Mumbai now</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
